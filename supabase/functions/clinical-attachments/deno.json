@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "lib": ["deno.window", "deno.ns"],
+    "strict": true
+  },
+  "imports": {
+    "@cantoo/pdf-lib": "https://cdn.jsdelivr.net/npm/@cantoo/pdf-lib@2.9.1/dist/pdf-lib.esm.min.js",
+    "@supabase/supabase-js": "npm:@supabase/supabase-js@2.112.4"
+  },
+  "tasks": {
+    "test": "deno test --allow-read tests"
+  }
+}

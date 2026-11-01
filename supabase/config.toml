@@ -1,0 +1,18 @@
+project_id = "petcare"
+
+[storage.buckets.clinical-attachments]
+public = false
+file_size_limit = "10MiB"
+allowed_mime_types = ["application/pdf"]
+
+[functions.clinical-attachments]
+verify_jwt = false
+
+[functions.communications]
+verify_jwt = false
+
+[functions.communications-dispatch]
+verify_jwt = false
+
+[functions.communications-resend-webhook]
+verify_jwt = false
